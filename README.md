@@ -1,7 +1,12 @@
 # ACL - Attendance on Command Line
-> Fetch attendance from ERP and Pretty Print it on Terminal.
+> *Fetch attendance from ERP and Pretty Print it on Terminal.*
 
 ## Install
+```bash
+git clone git@github.com:apsknight/acl.git
+cd acl/
+python3 -m pip install --editable .
+```
 
 ## Usage
 ```
