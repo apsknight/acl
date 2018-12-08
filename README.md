@@ -1,6 +1,8 @@
 # ACL - Attendance on Command Line
 > *Fetch attendance from ERP and Pretty Print it on Terminal.*
 
+[![Build Status](https://travis-ci.com/apsknight/acl.svg?branch=master)](https://travis-ci.com/apsknight/acl)
+
 ## Install
 ```bash
 git clone git@github.com:apsknight/acl.git
