@@ -3,6 +3,8 @@
 
 [![Build Status](https://travis-ci.com/apsknight/acl.svg?branch=master)](https://travis-ci.com/apsknight/acl)
 
+[![asciicast](https://asciinema.org/a/nBapjGfxqwNxgQHXfYn6N6TpH.svg)](https://asciinema.org/a/nBapjGfxqwNxgQHXfYn6N6TpH)
+
 ## Install
 ```bash
 python3 -m pip install -e git://github.com/apsknight/acl.git@0.1#egg=acl
