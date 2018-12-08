@@ -3,6 +3,10 @@ from setuptools import setup, find_packages
 setup(
     name='acl',
     version='0.1',
+    description='Fetch attendance from ERP and Pretty Print it on Terminal.',
+    author='Aman Pratap Singh',
+    author_email='amanprtpsingh@gmail.com',
+    url='https://github.com/apsknight/acl',
     py_modules=['acl'],
     packages=find_packages(),
     install_requires=[
