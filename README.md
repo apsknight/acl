@@ -5,9 +5,7 @@
 
 ## Install
 ```bash
-git clone git@github.com:apsknight/acl.git
-cd acl/
-python3 -m pip install --editable .
+python3 -m pip install -e git://github.com/apsknight/acl.git@0.1#egg=acl
 ```
 
 ## Usage
