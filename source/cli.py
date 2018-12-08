@@ -7,7 +7,9 @@ from tabulate import tabulate
 @click.password_option('-p', '--password', prompt=True, hide_input=True, confirmation_prompt=False,
                 help='Enter Password for ERP Login.')        
 def attendance(roll, password):
-    """Pretty Print Attendance on Terminal."""
+    """
+    Fetch attendance from ERP and Pretty Print it on Terminal.
+    """
     response = attempt(roll, password)
     if not response:
         click.secho('Invalid Credentials, Login failed.', fg='red', bold=True)
