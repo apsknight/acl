@@ -13,7 +13,7 @@ python3 -m pip install --editable .
 $ acl --help
     Usage: acl [OPTIONS]
 
-    Fetch attendance from ERP and Pretty Print it on Terminal.
+    Fetch attendance from IITBBS's ERP and Pretty Print it on Terminal.
 
     Options:
     -r, --roll TEXT      Enter the Roll Number for ERP Login.
