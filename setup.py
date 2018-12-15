@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='acl',
+    name='acl-iitbbs',
     version='0.1',
     description='Fetch attendance from ERP and Pretty Print it on Terminal.',
     author='Aman Pratap Singh',

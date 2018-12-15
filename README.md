@@ -7,7 +7,7 @@
 
 ## Install
 ```bash
-python3 -m pip install -e git://github.com/apsknight/acl.git@0.1#egg=acl
+python3 -m pip install acl-iitbbs
 ```
 
 ## Usage
