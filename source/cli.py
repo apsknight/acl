@@ -1,5 +1,5 @@
 import click
-from .scrapper import attempt
+from source.scrapper import attempt
 from tabulate import tabulate
 
 @click.command()
