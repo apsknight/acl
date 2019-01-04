@@ -11,7 +11,9 @@ def attendance(roll):
     Get the credentials first
     """
     password = keyring.get_password('ERP', roll)
+    saved_password = True
     if password == None:
+        saved_password = False
         password = getpass.getpass("Password: ")
 
     # Fetch attendance from ERP and Pretty Print it on Terminal.
@@ -25,10 +27,11 @@ def attendance(roll):
         print(tabulate(table, headers=["Subject Name", "Attended", "Percentage"],
                 tablefmt="fancy_grid"))
 
-        # Store password locally
-        ans = input("Do you want to store your password locally? (y/N) ")
-        if ans=='y':
-            keyring.set_password('ERP', roll, password)
+        # Store password locally if not saved already
+        if not saved_password:
+            ans = input("Do you want to store your password locally? (y/N) ")
+            if ans=='y':
+                keyring.set_password('ERP', roll, password)
 
 def make_table(response):
     result = list()
