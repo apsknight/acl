@@ -10,6 +10,11 @@
 python3 -m pip install acl-iitbbs
 ```
 
+## Update
+```bash
+python3 -m pip install acl-iitbbs --upgrade
+```
+
 ## Usage
 ```
 $ acl --help
@@ -43,6 +48,10 @@ Password:
 │ Managerial Economics                              │ 25/42      │        59.52 │
 ╘═══════════════════════════════════════════════════╧════════════╧══════════════╛
 ```
+
+## Contributors
+- Aman Pratap Singh
+- Tummala Madhav
 
 ## License
 MIT © [Aman Pratap Singh](https://aps.mit-license.org)
