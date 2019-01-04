@@ -5,21 +5,23 @@ from source.scrapper import attempt
 from tabulate import tabulate
 
 @click.command()
-def attendance():
+@click.option('-r', '--roll', prompt='Roll Number', help='Enter the Roll Number for ERP Login.')
+def attendance(roll):
     """
     Get the credentials first
     """
-    roll = input("Roll No: ")
     password = keyring.get_password('ERP', roll)
     if password == None:
         password = getpass.getpass("Password: ")
         ans = input("Do you want to store your password?(y/N)")
         if ans=='y':
             keyring.set_password('ERP', roll, password)
-    """
-    Fetch attendance from ERP and Pretty Print it on Terminal.
-    """
+            
+
+    # Fetch attendance from ERP and Pretty Print it on Terminal.
+    
     response = attempt(roll, password)
+    
     if not response:
         click.secho('Invalid Credentials, Login failed.', fg='red', bold=True)
     else:
