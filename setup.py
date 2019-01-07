@@ -10,7 +10,7 @@ setup(
     py_modules=['acl'],
     packages=find_packages(),
     install_requires=[
-        'Click', 'robobrowser', 'bs4', 'tabulate'
+        'Click', 'robobrowser', 'bs4', 'tabulate', 'keyring'
     ],
     entry_points='''
         [console_scripts]
